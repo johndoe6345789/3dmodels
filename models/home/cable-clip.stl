@@ -1,0 +1,96 @@
+solid cable_clip
+  // Cable management clip
+  // Outer dimensions: 30mm wide, 15mm tall, 10mm deep
+  // Inner channel: 8mm wide, 8mm tall (fits cables up to ~6mm diameter)
+
+  // Back wall
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 30 0 0
+      vertex 30 0 10
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 30 0 10
+      vertex 0 0 10
+    endloop
+  endfacet
+  // Front wall (lower part, below channel)
+  facet normal 0 1 0
+    outer loop
+      vertex 0 15 0
+      vertex 30 15 10
+      vertex 30 15 0
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 0 15 0
+      vertex 0 15 10
+      vertex 30 15 10
+    endloop
+  endfacet
+  // Bottom face
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 0 15 0
+      vertex 30 15 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 30 15 0
+      vertex 30 0 0
+    endloop
+  endfacet
+  // Top face
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 10
+      vertex 30 15 10
+      vertex 0 15 10
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 10
+      vertex 30 0 10
+      vertex 30 15 10
+    endloop
+  endfacet
+  // Left face
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 0 10
+      vertex 0 15 10
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 15 10
+      vertex 0 15 0
+    endloop
+  endfacet
+  // Right face
+  facet normal 1 0 0
+    outer loop
+      vertex 30 0 0
+      vertex 30 15 0
+      vertex 30 15 10
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 0 0
+      vertex 30 15 10
+      vertex 30 0 10
+    endloop
+  endfacet
+endsolid cable_clip
