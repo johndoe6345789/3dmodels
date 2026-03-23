@@ -1,0 +1,228 @@
+solid ruler
+  // 100mm printable ruler, 15mm wide, 2mm thick
+  // Main body
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 100 0 0
+      vertex 100 15 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 100 15 0
+      vertex 0 15 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 2
+      vertex 100 15 2
+      vertex 100 0 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 2
+      vertex 0 15 2
+      vertex 100 15 2
+    endloop
+  endfacet
+  // Front edge (y=0)
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 100 0 2
+      vertex 100 0 0
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 0 2
+      vertex 100 0 2
+    endloop
+  endfacet
+  // Back edge (y=15)
+  facet normal 0 1 0
+    outer loop
+      vertex 0 15 0
+      vertex 100 15 0
+      vertex 100 15 2
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 0 15 0
+      vertex 100 15 2
+      vertex 0 15 2
+    endloop
+  endfacet
+  // Left end (x=0)
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 15 0
+      vertex 0 15 2
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 15 2
+      vertex 0 0 2
+    endloop
+  endfacet
+  // Right end (x=100)
+  facet normal 1 0 0
+    outer loop
+      vertex 100 0 0
+      vertex 100 15 2
+      vertex 100 15 0
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 100 0 0
+      vertex 100 0 2
+      vertex 100 15 2
+    endloop
+  endfacet
+  // 10mm tick marks (flush with top surface, 1mm wide, 5mm long)
+  // Tick at 10mm
+  facet normal 0 0 1
+    outer loop
+      vertex 10 0 2
+      vertex 11 0 2
+      vertex 11 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 10 0 2
+      vertex 11 5 2
+      vertex 10 5 2
+    endloop
+  endfacet
+  // Tick at 20mm
+  facet normal 0 0 1
+    outer loop
+      vertex 20 0 2
+      vertex 21 0 2
+      vertex 21 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 20 0 2
+      vertex 21 5 2
+      vertex 20 5 2
+    endloop
+  endfacet
+  // Tick at 30mm
+  facet normal 0 0 1
+    outer loop
+      vertex 30 0 2
+      vertex 31 0 2
+      vertex 31 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 30 0 2
+      vertex 31 5 2
+      vertex 30 5 2
+    endloop
+  endfacet
+  // Tick at 40mm
+  facet normal 0 0 1
+    outer loop
+      vertex 40 0 2
+      vertex 41 0 2
+      vertex 41 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 40 0 2
+      vertex 41 5 2
+      vertex 40 5 2
+    endloop
+  endfacet
+  // Tick at 50mm
+  facet normal 0 0 1
+    outer loop
+      vertex 50 0 2
+      vertex 51 0 2
+      vertex 51 8 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 50 0 2
+      vertex 51 8 2
+      vertex 50 8 2
+    endloop
+  endfacet
+  // Tick at 60mm
+  facet normal 0 0 1
+    outer loop
+      vertex 60 0 2
+      vertex 61 0 2
+      vertex 61 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 60 0 2
+      vertex 61 5 2
+      vertex 60 5 2
+    endloop
+  endfacet
+  // Tick at 70mm
+  facet normal 0 0 1
+    outer loop
+      vertex 70 0 2
+      vertex 71 0 2
+      vertex 71 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 70 0 2
+      vertex 71 5 2
+      vertex 70 5 2
+    endloop
+  endfacet
+  // Tick at 80mm
+  facet normal 0 0 1
+    outer loop
+      vertex 80 0 2
+      vertex 81 0 2
+      vertex 81 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 80 0 2
+      vertex 81 5 2
+      vertex 80 5 2
+    endloop
+  endfacet
+  // Tick at 90mm
+  facet normal 0 0 1
+    outer loop
+      vertex 90 0 2
+      vertex 91 0 2
+      vertex 91 5 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 90 0 2
+      vertex 91 5 2
+      vertex 90 5 2
+    endloop
+  endfacet
+endsolid ruler

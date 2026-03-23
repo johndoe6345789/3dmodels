@@ -1,0 +1,51 @@
+solid pyramid
+  // Four-sided pyramid: 20mm x 20mm base, 20mm tall
+  // Base center at (10, 10, 0), apex at (10, 10, 20)
+  // Bottom face
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 20 0 0
+      vertex 20 20 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 20 20 0
+      vertex 0 20 0
+    endloop
+  endfacet
+  // Front face
+  facet normal 0 -0.894427 0.447214
+    outer loop
+      vertex 0 0 0
+      vertex 20 0 0
+      vertex 10 10 20
+    endloop
+  endfacet
+  // Right face
+  facet normal 0.894427 0 0.447214
+    outer loop
+      vertex 20 0 0
+      vertex 20 20 0
+      vertex 10 10 20
+    endloop
+  endfacet
+  // Back face
+  facet normal 0 0.894427 0.447214
+    outer loop
+      vertex 20 20 0
+      vertex 0 20 0
+      vertex 10 10 20
+    endloop
+  endfacet
+  // Left face
+  facet normal -0.894427 0 0.447214
+    outer loop
+      vertex 0 20 0
+      vertex 0 0 0
+      vertex 10 10 20
+    endloop
+  endfacet
+endsolid pyramid
